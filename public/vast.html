@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <title>Röstlokal Väst</title>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <h1>Välkommen till röstlokal Väst!</h1>
+
+
+      <div>
+        <label for="allmaField">Allmänna partiet:</label>
+        <input
+          id="allmaField"
+          type="number"
+        >
+      </div>
+      <div>
+        <label for="speciField">Speciella partiet:</label>
+        <input
+          id="speciField"
+          type="number"
+        >
+      </div>
+      <div>
+        <label for="sarskField">Särskilda partiet:</label>
+        <input
+          id="sarskField"
+          type="number"
+        >
+      </div>
+
+      <div>
+        <label for="otherField">Övriga röster:</label>
+        <input
+          id="otherField"
+          type="number"
+        >
+      </div>
+
+      <div>
+        <label for="invalidField">Ogiltiga röster:</label>
+        <input
+          id="invalidField"
+          type="number"
+        >
+      </div>
+      <button id="resetData">Töm</button>
+      <button id="submitData">Skicka</button>
+
+    <script src="report.js"></script>
+  </body>
+</html>

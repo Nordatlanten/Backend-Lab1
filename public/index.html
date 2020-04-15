@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <title>Röstrapporten</title>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <h1>Välkommen till röstrapporten!</h1>
+    <p>Här visas röster live!</p>
+
+    <div>
+      <h2>Allmänna partiet</h2>
+      <p><span id="allmaVotes"></span> antal röster</p>
+    </div>
+
+    <div>
+      <h2>Speciella partiet</h2>
+      <p><span id="speciVotes"></span> antal röster</p>
+    </div>
+
+    <div>
+      <h2>Särskilda partiet</h2>
+      <p><span id="sarskVotes"></span> antal röster</p>
+    </div>
+
+    <div>
+      <h2>Övriga röster</h2>
+      <p><span id="otherVotes"></span> antal röster</p>
+    </div>
+
+    <div>
+      <h2>Ogiltiga partiet</h2>
+      <p><span id="invalidVotes"></span> antal röster</p>
+    </div>
+
+    <script src="app.js"></script>
+
+
+  </body>
+</html>
